@@ -3,7 +3,10 @@ const template = document.getElementById("template");
 const fragment = document.createDocumentFragment();
 const btnesBotones = document.querySelectorAll(".card .btn");
 
-console.log(carrito);
-console.log(template);
-console.log(fragment);
-console.log(btnesBotones);
+const carritoObjeto = {};
+
+const agregarAlCarrito = (e) => {
+    console.log(e.target);
+}
+
+btnesBotones.forEach(btn => btn.addEventListener('click', agregarAlCarrito));
